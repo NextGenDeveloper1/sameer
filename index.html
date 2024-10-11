@@ -355,15 +355,39 @@
         <form action="https://formspree.io/f/mnnqaeyz"
   method="POST"
 >
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
+            
+  <!-- Customer Name -->
+        <div class="flex flex-col space-y-2">
+            <label for="name" class="text-gray-700">Name</label>
+            <input type="text" id="name" name="name" required class="p-2 border border-gray-600 rounded w-full bg-gray-100 text-gray-900" placeholder="Enter your NAME Here">
+        </div>
+
+        <!-- Email -->
+        <div class="flex flex-col space-y-2">
+            <label for="email" class="text-gray-700">Email</label>
+            <input type="email" id="email" name="email" required class="p-2 border border-gray-600 rounded w-full bg-gray-100 text-gray-900"placeholder="Enter your EMAIL Here">
+        </div>
+
+        <!-- Phone Number -->
+        <div class="flex flex-col space-y-2">
+            <label for="phone" class="text-gray-700">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required class="p-2 border border-gray-600 rounded w-full bg-gray-100 text-gray-900"placeholder="Enter your  PHONE NUMBER LIKE +91-12......">
+        </div>
+
+        <!-- Address -->
+        <div class="flex flex-col space-y-2">
+            <label for="address" class="text-gray-700">Address</label>
+            <input type="text" id="address" name="address" class="p-2 border border-gray-600 rounded w-full bg-gray-100 text-gray-900" placeholder="Street Address, City, State, ZIP Code">
+        </div>
+        <!-- Preferred Date and Time -->
+        <div class="flex flex-col space-y-2">
+            <label for="preferred-date" class="text-gray-700">Preferred Date and Time</label>
+            <input type="datetime-local" id="preferred-date" name="preferred-date" required class="p-2 border border-gray-600 rounded w-full bg-gray-100 text-gray-900"placeholder="share a TIME for us">
+        </div>
+
+
   <!-- your other form fields go here -->
+            
   <button type="submit">Send</button>
 
         </form>
